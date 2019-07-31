@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Gladys.Api.Handlers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Gladys.Web.Controllers
 {
@@ -11,7 +12,7 @@ namespace Gladys.Web.Controllers
 
     public ActionResult<string> Get(string queryName)
     {
-      return "Some default json";
+      return RequestHandler.HandleDefaultRequest();
     }
   }
 }
