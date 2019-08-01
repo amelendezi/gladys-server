@@ -7,12 +7,16 @@ namespace Gladys.Web.Controllers
   [ApiController]
   public class QueryController : ControllerBase
   {
-    // GET api/values
-    [HttpGet("{queryName}")]
-
-    public ActionResult<string> Get(string queryName)
+    [HttpGet("{type}/byId")]
+    public ActionResult<string> Get(string type, string id)
     {
-      return RequestHandler.HandleDefaultRequest();
+      return RequestHandler.GetById(type, id);
+    }
+
+    [HttpGet("{type}/all")]
+    public ActionResult<string> Get(string type, int skip, int take)
+    {
+      return RequestHandler.GetAll(type, skip, take);
     }
   }
 }

@@ -2,9 +2,14 @@
 {
   public static class RequestHandler
   {
-    public static string HandleDefaultRequest()
+    public static string GetById(string type, string id)
     {
-      return "This is some random message given as response";
+      return $"This is the GetById for the type '{type}' with {id}";
+    }
+
+    public static string GetAll(string type, int skip, int take)
+    {
+      return $"This is the GetAll for type '{type}' with skip {skip} and take {take}";
     }
   }
 }
