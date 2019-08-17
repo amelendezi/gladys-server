@@ -1,4 +1,6 @@
-﻿namespace Gladys.Api.Model
+﻿using System;
+
+namespace Gladys.Api.Model
 {
   public class ResidenceModel
   {
