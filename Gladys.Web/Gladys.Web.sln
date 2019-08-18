@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gladys.Api", "..\Gladys.Api
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gladys.Repository", "..\Gladys.Repository\Gladys.Repository.csproj", "{8F2DB4A3-8E6C-4BD2-86DB-7B686D4FECDB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gladys.Tests", "Gladys.Tests", "{6B5D105C-ED64-4695-BEA0-DCED98F9EAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gladys.Repository.Tests", "..\Gladys.Repository.Tests\Gladys.Repository.Tests.csproj", "{27443BE4-DD30-4034-8964-42CCDA692D43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +31,18 @@ Global
 		{8F2DB4A3-8E6C-4BD2-86DB-7B686D4FECDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F2DB4A3-8E6C-4BD2-86DB-7B686D4FECDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F2DB4A3-8E6C-4BD2-86DB-7B686D4FECDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27443BE4-DD30-4034-8964-42CCDA692D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27443BE4-DD30-4034-8964-42CCDA692D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27443BE4-DD30-4034-8964-42CCDA692D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27443BE4-DD30-4034-8964-42CCDA692D43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7A825C6-2742-48D2-8E88-005BA23B30BF}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27443BE4-DD30-4034-8964-42CCDA692D43} = {6B5D105C-ED64-4695-BEA0-DCED98F9EAF2}
 	EndGlobalSection
 EndGlobal
