@@ -22,7 +22,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Gladys.Repository.csproj" t="IncludeRecursive" />
       <e p="IRepository.cs" t="Include" />
-      <e p="Log" t="Include">
+      <e p="Logger" t="Include">
         <e p="ILogger.cs" t="Include" />
         <e p="StringBuilderLogger.cs" t="Include" />
       </e>
