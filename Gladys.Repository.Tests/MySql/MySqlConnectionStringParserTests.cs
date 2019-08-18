@@ -9,9 +9,7 @@ namespace Gladys.Repository.Tests.MySql
         [Test]
         public void On_Load_ReturnsCorrectConfig()
         {
-            string filePath = @"..\..\..\..\Gladys.AppData\dbconn.txt";
-
-            var result = MySqlConnectionStringParser.Load(filePath);
+            var result = MySqlConnectionStringParser.Load(MySqlTestConstants.ConnectionConfigPath);
             
             Assert.AreEqual(expected: "gladys", actual: result.User);
             Assert.AreEqual(expected: "gladyspass", actual: result.Password);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Gladys.Repository.Log;
 using Gladys.Repository.Model;
 
 namespace Gladys.Repository.MySql
@@ -8,16 +9,20 @@ namespace Gladys.Repository.MySql
   {
     private MySqlConnectionManager _manager;
     private MySqlConnectionConfig _config;
+    private ILogger _logger;
     
-    public MySqlRepository()
+    public MySqlRepository(MySqlConnectionConfig config, ILogger logger = null)
     {
-      _manager = new MySqlConnectionManager();
-      
+      _manager = new MySqlConnectionManager(logger);
+      _config = config;
     }
 
     public IEnumerable<IDataEntity> GetAll(string type)
     {
-      throw new System.NotImplementedException();
+      _manager.GetConnection(_config);
+      _manager.Disconnect();
+      
+      return null;
     }
 
     public IEnumerable<IDataEntity> GetById(Guid id)
