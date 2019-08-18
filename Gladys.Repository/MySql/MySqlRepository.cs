@@ -6,6 +6,15 @@ namespace Gladys.Repository.MySql
 {
   public class MySqlRepository : IRepository
   {
+    private MySqlConnectionManager _manager;
+    private MySqlConnectionConfig _config;
+    
+    public MySqlRepository()
+    {
+      _manager = new MySqlConnectionManager();
+      
+    }
+
     public IEnumerable<IDataEntity> GetAll(string type)
     {
       throw new System.NotImplementedException();
