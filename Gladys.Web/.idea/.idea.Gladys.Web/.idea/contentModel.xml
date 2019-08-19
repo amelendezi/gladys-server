@@ -27,6 +27,7 @@
         <e p="StringBuilderLogger.cs" t="Include" />
       </e>
       <e p="Model" t="Include">
+        <e p="DataEntityFactory.cs" t="Include" />
         <e p="Domain" t="Include">
           <e p="Residence.cs" t="Include" />
         </e>
@@ -36,6 +37,10 @@
         <e p="MySqlConnectionConfig.cs" t="Include" />
         <e p="MySqlConnectionManager.cs" t="Include" />
         <e p="MySqlConnectionStringParser.cs" t="Include" />
+        <e p="MySqlQueryModel" t="Include">
+          <e p="ColumnType.cs" t="Include" />
+          <e p="ISqlStatementSerializable.cs" t="Include" />
+        </e>
         <e p="MySqlRepository.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">

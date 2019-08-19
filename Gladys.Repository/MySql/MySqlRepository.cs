@@ -19,6 +19,20 @@ namespace Gladys.Repository.MySql
 
     public IEnumerable<IDataEntity> GetAll(string type)
     {
+      IDataEntity dataEntity = DataEntityFactory.GetDataEntity(type);
+
+      var dataEntityType = dataEntity.GetType();
+      foreach (var property in dataEntityType.GetProperties())
+      {
+        if (property.Name == "type")
+        {
+          continue;
+        }
+
+        property.GetType();
+
+      }
+      
       _manager.GetConnection(_config);
       _manager.Disconnect();
       

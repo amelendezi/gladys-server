@@ -6,7 +6,6 @@ namespace Gladys.Repository.Model.Domain
   {
     public Residence()
     {
-
     }
 
     public Residence(Guid id, string @alias, string residenceOwnerName, string residentName)
@@ -17,22 +16,14 @@ namespace Gladys.Repository.Model.Domain
       ResidentName = residentName;
     }
 
-    public Guid Id { get; }
+    public string Type => "Residence";
+    
+    public Guid Id { get; set; }
 
-    public string Alias { get; }
+    public string Alias { get; set; }
 
-    public string ResidenceOwnerName { get; }
+    public string ResidenceOwnerName { get; set; }
 
-    public string ResidentName { get; }
-
-    public void Load()
-    {
-      throw new NotImplementedException();
-    }
-
-    public void Save()
-    {
-      throw new NotImplementedException();
-    }
+    public string ResidentName { get; set; }
   }
 }

@@ -13,9 +13,9 @@ namespace Gladys.Repository.Tests.MySql
             var config = MySqlConnectionStringParser.Load(MySqlTestConstants.ConnectionConfigPath);
             var logger = new StringBuilderLogger();
             
-            var _sut = new MySqlRepository(config, logger);
+            var sut = new MySqlRepository(config, logger);
 
-            _sut.GetAll("default");
+            sut.GetAll("residence");
         }
     }
 }
